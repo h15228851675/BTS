@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap</title>
+    <!-- viewport 的标签，这个标签可以修改在大部分的移动设备上面的显示，为了确保适当的绘制和触屏缩放。 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/mine.css" rel="stylesheet" media="screen">
+
+    <!-- 如果用户 IE 浏览器的版本小于 IE9，那么就会加载这两个 js 文件库 -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://labfile.oss.aliyuncs.com/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="http://labfile.oss.aliyuncs.com/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/jquery-2.0.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+      <div class="container">
+          <div class="page-header">
+              <h1>导航条</h1>
+          </div>
+
+          <div class="page-header">
+              <h2>默认的导航条</h2>
+          </div>
+          <p>导航条是在您的应用或网站中作为导航标头的响应式元组件。它们在移动设备上可以折叠（并且可开可关），且在可用的视口宽度增加时变为水平展开模式。</p>
+
+          <div class="page-header">
+              <h3>定制折叠模式与水平模式的阈值</h3>
+          </div>
+          <p>根据你所放在导航条上的内容的长度，也许你需要调整导航条进入折叠模式和水平模式的阈值。通过改变@grid-float-breakpoint 变量的值或加入您自己的媒体查询 CSS 代码均可实现你的需求。</p>
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Brand</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                    </ul>
+                    <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                    </ul>
+                </div>
+            </nav>
+
+
+          <div class="page-header">
+              <h2>表单</h2>
+          </div>
+          <p>将表单放置于.navbar-form 之内可以呈现很好的垂直对齐，并在较窄的 viewport 中呈现折叠状态。使用对齐选项可以确定其在导航条上出现的位置。</p>
+            <nav class="navbar navbar-default" role="navigation">
+                <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+            </nav>
+            <p>为输入框添加 label 标签</p>
+            <p>如果你没有为输入框添加 label 标签，屏幕阅读器将会遇到问题。对于导航条内的表单，可以通过.sr-only class 隐藏 label 标签。</p>
+
+          <div class="page-header">
+              <h2>按钮</h2>
+          </div>
+          <p>对于不包含在< form>中的< button>元素，加上.navbar-btn 这个 class 后可以让它在导航条里垂直居中。</p>
+          <button type="button" class="btn btn-default navbar-btn">Sign in</button>
+
+          <div class="page-header">
+              <h2>文本</h2>
+          </div>
+          <p>把文本包裹在.navbar-text 中时，为了有正确的行距和颜色，通常使用< p>标签。</p>
+          <p class="navbar-text">Signed in as Mark Otto</p>
+
+          <div class="page-header">
+              <h2>非导航的链接</h2>
+          </div>
+          <p>或许你希望在标准的导航组件之外添加标准链接，那么，使用.navbar-link class 可以让链接有正确的默认颜色和反色。</p>
+          <p class="navbar-text navbar-right">Signed in as <a href="#" class="navbar-link">Mark Otto</a></p>
+
+          <div class="page-header">
+              <h2>组件对齐</h2>
+          </div>
+          <p>用.navbar-left 或者.navbar-right 工具类给导航链接、表单、按钮或文本对齐。两种类都用到在特定方向的 CSS 浮动样式。例如，要对齐导航链接，就要把它们放在个分开的、应用了工具类的< ul>里。</p>
+          <p>这些 class 是.pull-left 和.pull-right 的 mixin 版本，但是他们被限定在了媒体查询中，这样可以更容易的在各种尺寸的屏幕上处理导航条组件。</p>
+
+          <div class="page-header">
+              <h2>固定在顶部</h2>
+          </div>
+          <p>添加.navbar-fixed-top 可以让导航条固定在顶部。</p>
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <button type="button" class="btn btn-default navbar-btn">Sign in</button>
+            </nav>
+            <strong>需要为 body 标签设置内补（padding）</strong>
+            <p>这个固定的导航条会遮住页面上的其它内容，除非你给< body>的上方设置了 padding。用你自己的值，或用下面给出的代码都可以。提示：导航条的默认高度是 50px。</p>
+<pre>
+body { padding-top: 70px; }
+
+/*一定要放在 Bootstrap CSS 的核心文件之后。*/
+</pre>
+
+
+          <div class="page-header">
+              <h2>固定在底部</h2>
+          </div>
+          <p>用.navbar-fixed-bottom 代替。</p>
+            <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+                <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <button type="button" class="btn btn-default navbar-btn">Sign in</button>
+            </nav>
+            <strong>需要为 body 标签设置内补（padding）</strong>
+            <p>这个固定的导航条会遮住页面上的其它内容，除非你给< body>底部设置了 padding。用你自己的值，或用下面给出的代码都可以。提示：导航条的默认高度是 50px。</p>
+<pre>
+ body { padding-bottom: 70px; }
+
+/*一定要在加载 Bootstrap CSS 的核心后使用它。*/
+</pre>
+
+          <div class="page-header">
+              <h2>静止在顶部</h2>
+          </div>
+          <p>通过添加.navbar-static-top 即可创建一个与页面的导航条。它会随着页面向下滚动而消失。和.navbar-fixed-*类不同的是，你不用给 body 添加 padding。</p>
+            <nav class="navbar navbar-default navbar-static-top" role="navigation">
+                <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <button type="button" class="btn btn-default navbar-btn">Sign in</button>
+            </nav>
+
+          <div class="page-header">
+              <h2>反色的导航条</h2>
+          </div>
+          <p>通过添加.navbar-inverse 类可以改变导航条的外观。</p>
+            <nav class="navbar navbar-default navbar-inverse" role="navigation">
+                <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <button type="button" class="btn btn-default navbar-btn">Sign in</button>
+            </nav>
+
+          <div class="page-header">
+              <h2></h2>
+          </div>
+
+          <div class="page-header">
+              <h2></h2>
+          </div>
+
+          <div class="page-header">
+              <h2></h2>
+          </div>
+       </div>
+  </body>
+</html>
