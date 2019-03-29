@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap</title>
+    <!-- viewport 的标签，这个标签可以修改在大部分的移动设备上面的显示，为了确保适当的绘制和触屏缩放。 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/mine.css" rel="stylesheet" media="screen">
+
+    <!-- 如果用户 IE 浏览器的版本小于 IE9，那么就会加载这两个 js 文件库 -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://labfile.oss.aliyuncs.com/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="http://labfile.oss.aliyuncs.com/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/jquery-2.0.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body style="width:900px; margin-left:auto; margin-right:auto;">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" style="text-align:center">
+        <div class="item active">
+          <img alt="First slide" src="http://placehold.it/900x500/78EB09/FFEB09/&text=First slide" ></img>
+            <div class="carousel-caption">
+                <h4>First Thumbnail label</h4>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            </div>
+        </div>
+        <div class="item">
+          <img alt="Second slide" src="http://placehold.it/900x500/78EB09/FFEB09/&text=Second slide" ></img>
+            <div class="carousel-caption">
+                <h4>First Thumbnail label</h4>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            </div>
+        </div>
+        <div class="item">
+          <img alt="Third slide" src="http://placehold.it/900x500/78EB09/FFEB09/&text=Third slide"  ></img>
+            <div class="carousel-caption">
+                <h4>First Thumbnail label</h4>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+ <script src="js/jquery-2.0.3.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+ <script type="text/javascript">
+//$('.carousel').carousel('next');
+ </script>
+ <p>Internet Explorer 8 & 9 不支持过渡动画效果</p>
+ <p>可访问性问题: 轮播组件并不兼容可访问性标准。如果需要兼容，请考虑其他展示幻灯片的方案。</p>
+</html>
