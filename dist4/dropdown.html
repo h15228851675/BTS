@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap</title>
+    <!-- viewport 的标签，这个标签可以修改在大部分的移动设备上面的显示，为了确保适当的绘制和触屏缩放。 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/mine.css" rel="stylesheet" media="screen">
+
+    <!-- 如果用户 IE 浏览器的版本小于 IE9，那么就会加载这两个 js 文件库 -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://labfile.oss.aliyuncs.com/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="http://labfile.oss.aliyuncs.com/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/jquery-2.0.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+      <div class="container">
+          <div class="page-header">
+              <h1>下拉菜单</h1>
+          </div>
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                    Dropdown
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                </ul>
+            </div>
+            <p>一个 Dropdown 按钮和右侧有个小图标 caret，当然这个小图标和按钮的文本是平级的。</p>
+            <p>首先看 button 按钮中有个 dropdown-toggle，还有一个 data-toggle 属性，根据这个属性来弹出下来列表。</p>
+            <p>紧接着 ul 标签的 dropdown-menu 应该是和上面 button 按钮的样式类 dropdown-toggle 联合使用，在通过 aria-labelledby 绑定上面的 button 按钮。</p>
+
+          <div class="page-header">
+              <h1>对齐选项</h1>
+          </div>
+              <p>给下拉菜单.dropdown-menu 加上.text-right 使文字右对齐。</p>
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                    Dropdown
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu text-right" role="menu" aria-labelledby="dropdownMenu1" style="text-align:right;">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                </ul>
+            </div>
+
+
+          <div class="page-header">
+              <h1>标题</h1>
+          </div>
+            <h1>下拉菜单</h1>
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenu1_1" data-toggle="dropdown">
+                    Dropdown
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu text-right" role="menu" aria-labelledby="dropdownMenu1_1">
+                    <li role="presentation" class="dropdown-header">Dropdown header</li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation" class="dropdown-header">Dropdown header</li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                </ul>
+            </div>
+            <p>主要是添加了< li role="presentation" class="dropdown-header">Dropdown header 里面有个.dropdown-header 的样式类。</p>
+            <br>
+
+          <div class="page-header">
+              <h1>禁用的菜单项</h1>
+          </div>
+          <p>给下拉菜单中的< li>加上.disabled 禁用链接。</p>
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenu1_2" data-toggle="dropdown">
+                    Dropdown
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu text-right" role="menu" aria-labelledby="dropdownMenu1_2">
+                    <li role="presentation" class="dropdown-header">Dropdown header</li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                    <li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation" class="dropdown-header">Dropdown header</li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                </ul>
+            </div>
+            <br>
+
+          <div class="page-header">
+              <h1>按钮组</h1>
+          </div>
+          <p>按钮组中的工具提示和弹出框需要特别的设置</p>
+          <p>当为.btn-group 中的元素应用工具提示或弹出框时，必须指定 container: 'body'选项，这样可以避免不必要的副作用（例如工具提示或弹出框触发时，会让页面元素变宽和/或失去圆角）。</p>
+
+          <div class="page-header text-center">
+              <h2>按钮组基本案例</h2>
+          </div>
+          <p>把一系列的.btn 按钮放入.btn-group。</p>
+          <div class="btn-group">
+            <button type="button" class="btn btn-default">Left</button>
+            <button type="button" class="btn btn-default">Middle</button>
+            <button type="button" class="btn btn-default">Right</button>
+         </div>
+         <p>通过.btn-group 就可以将一组 button 按钮并且为其添加样式类 btn</p>
+
+          <div class="page-header text-center">
+              <h2>按钮工具栏</h2>
+          </div>
+          <p>把一组< div class="btn-group">组合进一个< div class="btn-toolbar">做成更复杂的组件。</p>
+            <div class="btn-toolbar" role="toolbar">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default">1</button>
+                    <button type="button" class="btn btn-default">2</button>
+                    <button type="button" class="btn btn-default">3</button>
+                    <button type="button" class="btn btn-default">4</button>
+                    <button type="button" class="btn btn-default">5</button>
+                    <button type="button" class="btn btn-default">6</button>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default">7</button>
+                    <button type="button" class="btn btn-default">8</button>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default">9</button>
+                </div>
+            </div>
+
+          <div class="page-header text-center">
+              <h2>尺寸</h2>
+          </div>
+          <p>只要给.btn-group 加上.btn-group-*，而不是给组中每个按钮都应用大小类。</p>
+            <div class="btn-group btn-group-lg">
+                <button type="button" class="btn btn-default">1</button>
+                <button type="button" class="btn btn-default">2</button>
+                <button type="button" class="btn btn-default">3</button>
+                <button type="button" class="btn btn-default">4</button>
+                <button type="button" class="btn btn-default">5</button>
+                <button type="button" class="btn btn-default">6</button>
+            </div>
+            <div class="btn-group btn-group-sm">
+                <button type="button" class="btn btn-default">7</button>
+                <button type="button" class="btn btn-default">8</button>
+            </div>
+            <div class="btn-group btn-group-xs">
+            <button type="button" class="btn btn-default">9</button>
+            </div>
+
+
+          <div class="page-header text-center">
+              <h2>嵌套</h2>
+          </div>
+          <p>想要把下拉菜单混合到一系列按钮中，就把.btn-group 放入另一个.btn-group 中。</p>
+            <div class="btn-group">
+                <button type="button" class="btn btn-default">1</button>
+                <button type="button" class="btn btn-default">2</button>
+
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    Dropdown
+                    <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                    <li><a href="#">Dropdown link</a></li>
+                    <li><a href="#">Dropdown link</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+          <div class="page-header text-center">
+              <h2>垂直排列</h2>
+          </div>
+          <p>让一组按钮竖直显示而不是水平显示</p>
+            <div class="btn-group btn-group-vertical">
+                <a href="#">
+                    <button type="button" class="btn btn-default">1</button>
+                    <button type="button" class="btn btn-default">2</button>
+                </a>
+
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        Dropdown
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Dropdown link</a></li>
+                        <li><a href="#">Dropdown link</a></li>
+                    </ul>
+                </div>
+            </div>
+
+          <div class="page-header text-center">
+              <h2>两端对齐的链接排列</h2>
+          </div>
+          <p>让一组按钮拉长为相同的尺寸，适应父元素的宽度。</p>
+          <strong>特定元素的用法</strong>
+            <div class="btn-group btn-group-justified">
+                <a class="btn btn-default" href="#">Left</a>
+                <a class="btn btn-default" href="#">Middle</a>
+                <a class="btn btn-default" href="#">Right</a>
+            </div>
+            <br>
+            <p>这只适用 < a> 元素因为 < button> 不能应用这些样式: </p>
+            <div class="btn-group btn-group-justified">
+                <button type="button" class="btn btn-default">Left</button>
+                <button type="button" class="btn btn-default">Middle</button>
+                <button type="button" class="btn btn-default">Right</button>
+            </div>
+
+          <div class="page-header text-center">
+              <h2>按钮式下拉菜单</h2>
+          </div>
+          <p>把任何按钮放入.btn-group 然后加入正确的菜单标记，就可以做成下拉菜单触发器。</p>
+
+          <div class="page-header text-center">
+              <h2>单按钮下拉菜单</h2>
+          </div>
+          <p>只要改变一些基本的标记，就能把按钮变成下拉菜单开关。</p>
+            <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                Action <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+            </ul>
+            </div>
+
+          <div class="page-header text-center">
+              <h2>分裂式按钮下拉菜单</h2>
+          </div>
+          <p>相似地，分裂式按钮下拉菜单也需要同样的改变标记，但只要多一个分开的按钮。</p>
+            <div class="dropdown">
+                <button type="button" class="btn btn-danger">Action</button>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+            </div>
+
+          <div class="page-header text-center">
+              <h2>尺寸</h2>
+          </div>
+          <p>下拉菜单按钮适用所有尺寸的按钮</p>
+            <div class="btn-group">
+                <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown">
+                    Large button <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    ...
+                </ul>
+            </div>
+
+            <!-- Small button group -->
+            <div class="btn-group">
+                <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
+                    Small button <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    ...
+                </ul>
+            </div>
+
+            <!-- Extra small button group -->
+            <div class="btn-group">
+                <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown">
+                    Extra small button <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    ...
+                </ul>
+            </div>
+
+          <div class="page-header text-center">
+              <h2>向上弹出式菜单</h2>
+          </div>
+          <p>给父元素添加.dropup 就能使触发的下拉菜单在元素上方。</p>
+            <div class="btn-group dropup">
+                <button type="button" class="btn btn-default">Dropup</button>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                    <!-- Dropdown menu links -->
+                    -----
+                </ul>
+            </div>
+
+          <div class="page-header text-center">
+              <h2></h2>
+          </div>
+
+      </div>
+  </body>
+</html>
