@@ -1,0 +1,98 @@
+body{
+	font-family: 'Cambria Bold', 'Cambria';
+}
+.navbar-default {
+  background-color: #f6f6f6;
+  border: 0;
+  margin-bottom:0;
+  
+}
+.navbar-default .navbar-brand {
+  color: #777777;
+  height:60px;
+  padding-top:0;
+  padding-bottom:0;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #036eb8;
+}
+.navbar-default .navbar-text {
+  color: #777777;
+}
+.navbar-default .navbar-nav > li > a {
+	font-weight: 700;
+	font-size: 18px;
+  color: #777777;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #036eb8;
+}
+.navbar-default .navbar-nav > li.active > a {
+  color: #036eb8;
+  background-color: #f6f6f6;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #036eb8;
+  background-color: #f6f6f6;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #036eb8;
+  background-color: #036eb8;
+}
+.navbar-default .navbar-toggle {
+  border-color: #036eb8;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #036eb8;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #777777;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #777777;
+}
+.navbar-default .navbar-link {
+  color: #777777;
+}
+.navbar-default .navbar-link:hover {
+  color: #036eb8;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #777777;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #036eb8;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #036eb8;
+    background-color: #036eb8;
+  }
+}
+.navbar-default{
+	min-height:80px;
+	padding: 0;
+}
+.navbar-default .container{
+	height:60px;
+}
+nav .navbar-toggle{
+	margin-top:28px;;
+}
+#navbar{
+  background-color: #f6f6f6;
+}
