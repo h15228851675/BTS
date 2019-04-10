@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #f2f2f2;
+      }
+
+      .cls-1 {
+        stroke-linecap: round;
+      }
+
+      .cls-2 {
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4, .cls-5 {
+        stroke: none;
+      }
+
+      .cls-5 {
+        fill: #f2f2f2;
+      }
+    </style>
+  </defs>
+  <g id="globe" transform="translate(-145 -1825)">
+    <path id="Path_597" data-name="Path 597" class="cls-1" d="M0,0V13.333" transform="translate(152.5 1825.5)"/>
+    <path id="Path_598" data-name="Path 598" class="cls-1" d="M13.69,0H0" transform="translate(145.584 1832.083)"/>
+    <path id="Path_98" data-name="Path 98" class="cls-2" d="M30.024,3.185a8.681,8.681,0,0,0,0,13.853" transform="translate(121.922 1822.315)"/>
+    <path id="Path_99" data-name="Path 99" class="cls-2" d="M72.655,16.953a8.647,8.647,0,0,0,0-13.853" transform="translate(80.645 1822.4)"/>
+    <g id="Path_599" data-name="Path 599" class="cls-3" transform="translate(145 1825)">
+      <path class="cls-4" d="M7.5,0A7.5,7.5,0,1,1,0,7.5,7.5,7.5,0,0,1,7.5,0Z"/>
+      <path class="cls-5" d="M 7.5 1 C 3.915889739990234 1 1 3.915889739990234 1 7.5 C 1 11.08411026000977 3.915889739990234 14 7.5 14 C 11.08411026000977 14 14 11.08411026000977 14 7.5 C 14 3.915889739990234 11.08411026000977 1 7.5 1 M 7.5 0 C 11.64212989807129 0 15 3.35785961151123 15 7.5 C 15 11.64212989807129 11.64212989807129 15 7.5 15 C 3.35785961151123 15 0 11.64212989807129 0 7.5 C 0 3.35785961151123 3.35785961151123 0 7.5 0 Z"/>
+    </g>
+  </g>
+</svg>

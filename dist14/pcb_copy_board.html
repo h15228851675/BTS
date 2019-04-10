@@ -1,0 +1,283 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta charset="utf-8">
+    <title>PCB copy board</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/mine.css" rel="stylesheet" media="screen">
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="image/golonct.ico" type="image/x-icon" rel="shortcut icon" />
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+	<body>
+		
+    <!-- nav -->
+		<nav class="navbar navbar-fixed-top" role="navigation" id="navbar">
+      	<div class="top-dark">
+	        <div class="container">
+							<div class="row">
+								<div class="col-sm-4 hidden-xs hy">WELCOME  TO  GOLONCT</div>
+								<div class="col-sm-8 text-right">	
+			             <ul class="list-inline top-dark-right pull-right">
+			             	 <li><img src="image/u20.png" alt="alt" title="title" /></li>
+			             </ul>						
+								</div>
+							</div>
+					</div>
+      	</div>
+        <div class="navbar-inner">
+		        <div class="container">
+		            <div class="navbar-header">
+		                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		                      <span class="sr-only">GOLONCT</span>
+		                      <span class="icon-bar white-icon-bar"></span>
+		                      <span class="icon-bar white-icon-bar"></span>
+		                      <span class="icon-bar white-icon-bar"></span>
+		                </button>
+		                <a class="navbar-brand" href="index.html">
+		                    <img id="jupyter-nav-logo" class="navbar-logo" src="image/logoo.png" alt="GOLONCT LOGO">
+		                </a>
+		            </div>
+		            <div class="blur"></div>
+		            <div id="bs-example-navbar-collapse-1" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+		                <ul class="nav navbar-nav">
+					            <li><a href="index.html">HOME</a></li>
+					            <li class="dropdown">
+								        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarLinkOne" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Electronic Design <i class="fa fa-angle-down"></i></a>
+				                <ul class="dropdown-menu text-right" role="menu" aria-labelledby="navbarLinkOne">
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="pcb_copy_board.html">PCB copy board</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="mcu_development.html">MCU development</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="pcb_design.html">PCB design</a></li>
+				                </ul>
+					            </li>
+					            <li class="dropdown">
+								        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarLinkTwo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PCBA Manufacturing <i class="fa fa-angle-down"></i></a>
+				                <ul class="dropdown-menu text-right" role="menu" aria-labelledby="navbarLinkTwo">
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="pcba_processing.html">PCBA processing</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="pcba_proofing.html">PCBA proofing</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="pcba_test.html">PCBA test</a></li>
+				                </ul>
+					            </li>
+					            <li class="dropdown">
+								        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarLinkThree" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">OEM Foundry <i class="fa fa-angle-down"></i></a>
+				                <ul class="dropdown-menu text-right" role="menu" aria-labelledby="navbarLinkTwo">
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="component_procurement.html">Component procurement</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="pcb_board.html">PCB board</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="smt_processing.html">SMT processing</a></li>
+				                </ul>
+					            </li>
+					            <li class="dropdown">
+								        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarLinkFour" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Quote <i class="fa fa-angle-down"></i></a>
+				                <ul class="dropdown-menu text-right" role="menu" aria-labelledby="navbarLinkTwo">
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="get_quote-bom.html">Fast BOM quote</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="get_quote-pcb.html">PCB online pricing</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="get_quote-smt.html">SMT online pricing</a></li>
+				                </ul>
+					            </li>
+					            <li class="dropdown">
+								        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarLinkFive" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solution <i class="fa fa-angle-down"></i></a>
+				                <ul class="dropdown-menu text-right" role="menu" aria-labelledby="navbarLinkTwo">
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="solution.html">Rail transport</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="">new energy resource</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="">Medical equipment</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="">Industrial control</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="">Other industry</a></li>
+				                </ul>
+					            </li>
+					            <li><a href="about_golonct.html">ABOUT</a></li>
+		                </ul>               
+		            </div>
+		        </div>
+		    </div>
+    </nav>
+    
+    <div class="h_40 hidden-xs"></div>
+    <div class="containn">
+	  	<div class="container row_img">
+				<div class="row">
+					<div class="col-md-12 col-xs-12">
+				    	<img src="image/u0.png" width="100%">
+					</div>
+				</div>
+				
+				<div class="biaoti hidden-xs">
+					<h1>Electronic design</h1>
+					<p>PCB copy board | MCU development | PCB design</p>
+				</div>
+				
+				<div class="row-full">
+					<div class="page-header">
+						<h2>PCB copy board</h2>
+					</div>
+					<div class="col-sm-3 con_nav">
+						<ul class="list-group mgt_20">
+							<li class="list-group-item on"><a href="pcb_copy_board.html">PCB copy board</a></li>
+							<li class="list-group-item"><a href="mcu_development.html">MCU development</a></li>
+							<li class="list-group-item"><a href="pcb_design.html">PCB design</a></li>
+						</ul>
+					</div>
+
+					<div class="col-sm-9 con_text">
+						<div class="row-full">
+							
+							<p>
+								
+
+									GOLONCT has many years of experience in reverse engineering practice. It has basically carried out cloning and prototype
+
+									 
+
+									production for electronic circuit boards of all walks of life. It has an absolute advantage for the control of copying board, difficult
+
+									 
+
+									technical research and cost price.
+
+							</p>
+			        
+			        <h4>Our copying ability</h4>
+			        <table class="table table-bordered">
+			        	<tr>
+			        		<th>The highest number of floors</th>
+			        		<th>32 layers</th>
+			        	</tr>
+			        	<tr>
+			        		<td>Maximum size</td>
+			        		<td>640 mm × 480 mm</td>
+			        	</tr>
+			        	<tr>
+			        		<td>Minimum line width</td>
+			        		<td>0.01 mm (0.4 mil)</td>
+			        	</tr>
+			        	<tr>
+			        		<td>Minimum line gap</td>
+			        		<td>0.01 mm (0.4 mil)</td>
+			        	</tr>
+			        	<tr>
+			        		<td>Minimum mechanical buried hole</td>
+			        		<td>0.15 mm (6 mil)</td>
+			        	</tr>
+			        	<tr>
+			        		<td>Maximum thickness</td>
+			        		<td>6 mm</td>
+			        	</tr>
+			        	<tr>
+			        		<td>Minimum laser blind hole</td>
+			        		<td>0.1 mm (4 mil)</td>
+			        	</tr>
+			        	<tr>
+			        		<td>Minimum laser buried hole</td>
+			        		<td>0.1 mm (4 mil)</td>
+			        	</tr>
+			        	<tr>
+			        		<td>Types of blind holes</td>
+			        		<td>1st order, 2nd order, 3rd order, 4th order</td>
+			        	</tr>
+			        	<tr>
+			        		<td>Impedance measurement</td>
+			        		<td>5 ~ 150 Ω</td>
+			        	</tr>
+			        </table>
+			        
+			        <h4>Copy board success case</h4>
+							<div class="row text-center photo">
+							    <div class="col-sm-4 col-md-4">
+							        <div class="thumbnail">
+								        	<div class="cap_t">
+							              <img src="image/s/u93.png"  alt="1">
+								        	</div>
+							            <div class="caption cap">
+							                Localization example of DCU module for subway traction inverter
+							            </div>
+							        </div>
+							    </div>
+							    <div class="col-sm-4 col-md-4">
+							        <div class="thumbnail">
+								        	<div class="cap_t">
+							              <img src="image/s/u93.png"  alt="1">
+								        	</div>
+							            <div class="caption cap">
+							                Localization example of DCU module for subway traction inverter
+							            </div>
+							        </div>
+							    </div>
+							    <div class="col-sm-4 col-md-4">
+							        <div class="thumbnail">
+								        	<div class="cap_t">
+							              <img src="image/s/u93.png"  alt="1">
+								        	</div>
+							            <div class="caption cap">
+							                Localization example of DCU module for subway traction inverter
+							            </div>
+							        </div>
+							    </div>
+							</div>
+			        
+			        <h4>PCB copy board process</h4>
+			        <ol class="ol_text">
+			        	<li>Consultation quotation</li>
+			        	<li>Customer provides PCB motherboard</li>
+			        	<li>Identification contract, down payment</li>
+			        	<li>Project start</li>
+			        	<li>Project completion</li>
+			        	<li>Customer confirmation</li>
+			        	<li>Pay the final payment</li>
+			        	<li>Return material</li>
+			        	<li>After-sales maintenance</li>
+			        </ol>
+						</div>
+					</div>
+				</div>
+			</div>
+    </div>
+    
+    <div class="h_40"></div>
+    
+    <!-- footer -->
+    <footer>
+            
+        <br>
+        
+        <div class="container main-footer text-center">
+            <div class="row">
+            	<div class="col-md-12">
+								<div class="container-fluid">
+									<div class="row">
+										<img src="image/u20.png" alt="alt" title="title" />
+									</div>
+									
+                 <br>
+        
+									<div class="row">
+	                    <ul class="list-inline footer-menu">
+						            <li><a href="index.html">HOME</a></li>
+						            <li><a href="pcb_copy_board.html">Electronic Design</a></li>
+						            <li><a href="pcba_processing.html">PCBA Manufacturing</a></li>
+						            <li><a href="component_procurement.html">OEM Foundry</a></li>
+						            <li><a href="get_quote-bom.html">Get Quote</a></li>
+						            <li><a href="solution.html">Solution</a></li>
+						            <li><a href="about_golonct.html">ABOUT</a></li>
+	                    </ul>
+									</div>
+								</div>
+            	</div>
+            </div>
+            
+            <br>
+            
+						<p>
+							Copyright 2019 &copy;  Shenzhen Julong Century ElectronicsCo., Ltd.
+						</p>
+        </div>
+    </footer>	  
+	  
+    <script src="js/jquery-2.0.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
