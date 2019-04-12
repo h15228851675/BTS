@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta charset="utf-8">
+    <title>PCB online pricing</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/mine.css" rel="stylesheet" media="screen">
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="image/golonct.ico" type="image/x-icon" rel="shortcut icon" />
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+	<body>
+		
+    <!-- nav -->
+		<nav class="navbar navbar-fixed-top" role="navigation" id="navbar">
+      	<div class="top-dark">
+	        <div class="container">
+							<div class="row">
+								<div class="col-sm-4 hidden-xs hy">WELCOME  TO  GOLONCT</div>
+								<div class="col-sm-8 col-xs-12 text-right flags_box">	
+										<div class="flags">
+											   <a class="btn btn-default" href="/our-flag/" role="button" class="tr_active"><i title="English" class="flag flag-us"></i></a>
+											   <a class="btn btn-default" href="/zh/our-flag/" role="button"><i title="中文(简体)" class="flag flag-cn"></i></a>
+											   <a class="btn btn-default" href="/zh-tw/our-flag/" role="button"><i title="中文(漢字)" class="flag flag-tw"></i></a>
+											   <a class="btn btn-default" href="/cs/our-flag/" role="button"><i title="Čeština" class="flag flag-cz"></i></a>
+											   <a class="btn btn-default" href="/da/our-flag/" role="button"><i title="Dansk" class="flag flag-dk"></i></a>
+											   <a class="btn btn-default" href="/fil/our-flag/" role="button"><i title="Wikang Filipino" class="flag flag-ph"></i></a>
+											   <a class="btn btn-default" href="/fi/our-flag/" role="button"><i title="Suomi" class="flag flag-fi"></i></a>
+											   <a class="btn btn-default" href="/he/our-flag/" role="button"><i title="עברית" class="flag flag-il"></i></a>
+											   <a class="btn btn-default" href="/id/our-flag/" role="button"><i title="Bahasa Indonesia" class="flag flag-id"></i></a>
+											   <a class="btn btn-default" href="/ja/our-flag/" role="button"><i title="日本语" class="flag flag-jp"></i></a>
+											   <a class="btn btn-default" href="/ko/our-flag/" role="button"><i title="韩语" class="flag flag-kr"></i></a>
+											   <a class="btn btn-default" href="/lo/our-flag/" role="button"><i title="ພາສາລາວ" class="flag flag-la"></i></a>
+											   <a class="btn btn-default" href="/la/our-flag/" role="button"><i title="Latīna" class="flag flag-va"></i></a>
+											   <a class="btn btn-default" href="/ms/our-flag/" role="button"><i title="Bahasa Melayu" class="flag flag-my"></i></a>
+											   <a class="btn btn-default" href="/pl/our-flag/" role="button"><i title="Polski" class="flag flag-pl"></i></a>
+											   <a class="btn btn-default" href="/ro/our-flag/" role="button"><i title="Rom&acirc;nă" class="flag flag-ro"></i></a>
+											   <a class="btn btn-default" href="/sv/our-flag/" role="button"><i title="Svenska" class="flag flag-se"></i></a>
+											   <a class="btn btn-default" href="/th/our-flag/" role="button"><i title="ภาษาไทย" class="flag flag-th"></i></a>
+											   <a class="btn btn-default" href="/uk/our-flag/" role="button"><i title="Українська" class="flag flag-ua"></i></a>
+											   <a class="btn btn-default" href="/uz/our-flag/" role="button"><i title="Oʻzbek tili" class="flag flag-uz"></i></a>
+										</div>
+								</div>
+							</div>
+					</div>
+      	</div>
+        <div class="navbar-inner">
+		        <div class="container">
+		            <div class="navbar-header">
+		                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		                      <span class="sr-only">GOLONCT</span>
+		                      <span class="icon-bar white-icon-bar"></span>
+		                      <span class="icon-bar white-icon-bar"></span>
+		                      <span class="icon-bar white-icon-bar"></span>
+		                </button>
+		                <a class="navbar-brand" href="index.html">
+		                    <img id="jupyter-nav-logo" class="navbar-logo" src="image/logoo.png" alt="GOLONCT LOGO">
+		                </a>
+		            </div>
+		            <div class="blur"></div>
+		            <div id="bs-example-navbar-collapse-1" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+		                <ul class="nav navbar-nav">
+					            <li><a href="index.html">HOME</a></li>
+					            <li class="dropdown">
+								        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarLinkOne" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Electronic Design <i class="fa fa-angle-down"></i></a>
+				                <ul class="dropdown-menu text-right" role="menu" aria-labelledby="navbarLinkOne">
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="pcb_copy_board.html">PCB copy board</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="mcu_development.html">MCU development</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="pcb_design.html">PCB design</a></li>
+				                </ul>
+					            </li>
+					            <li class="dropdown">
+								        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarLinkTwo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PCBA Manufacturing <i class="fa fa-angle-down"></i></a>
+				                <ul class="dropdown-menu text-right" role="menu" aria-labelledby="navbarLinkTwo">
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="pcba_processing.html">PCBA processing</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="pcba_proofing.html">PCBA proofing</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="pcba_test.html">PCBA test</a></li>
+				                </ul>
+					            </li>
+					            <li class="dropdown">
+								        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarLinkThree" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">OEM Foundry <i class="fa fa-angle-down"></i></a>
+				                <ul class="dropdown-menu text-right" role="menu" aria-labelledby="navbarLinkTwo">
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="component_procurement.html">Component procurement</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="pcb_board.html">PCB board</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="smt_processing.html">SMT processing</a></li>
+				                </ul>
+					            </li>
+					            <li class="dropdown">
+								        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarLinkFour" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Quote <i class="fa fa-angle-down"></i></a>
+				                <ul class="dropdown-menu text-right" role="menu" aria-labelledby="navbarLinkTwo">
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="get_quote-bom.html">Fast BOM quote</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="get_quote-pcb.html">PCB online pricing</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="get_quote-smt.html">SMT online pricing</a></li>
+				                </ul>
+					            </li>
+					            <li class="dropdown">
+								        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarLinkFive" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solution <i class="fa fa-angle-down"></i></a>
+				                <ul class="dropdown-menu text-right" role="menu" aria-labelledby="navbarLinkTwo">
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="solution.html">Rail transport</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="">new energy resource</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="">Medical equipment</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="">Industrial control</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="">Other industry</a></li>
+				                </ul>
+					            </li>
+					            <li><a href="about_golonct.html">ABOUT</a></li>
+		                </ul>               
+		            </div>
+		        </div>
+		    </div>
+    </nav>
+    
+    <!--div class="hidden-xs" style="height: 388px; margin-top: 0; background: url('image/Accels3_Hero.jpg') 50% 50% / cover no-repeat fixed transparent;"></div-->   
+    
+    <div class="h_20"></div>
+    <div class="containn">
+	  	<div class="container row_img">
+				<div class="row">
+					<div class="col-md-12 col-xs-12">
+				    	<img src="image/s/u17.png" width="100%">
+					</div>
+				</div>
+				
+				<div class="biaoti2 hidden-xs">
+					<p>
+						Quickly meet customer needs
+						<br>
+						<br>
+						Efficiently complete the offer
+					</p>
+				</div>
+				
+				<div class="row-full">
+					<div class="page-header">
+						<h2>PCB online pricing</h2>
+					</div>
+					<div class="col-sm-3 con_nav">
+						<ul class="list-group mgt_20">
+							<li class="list-group-item"><a href="get_quote-bom.html">Fast BOM quote</a></li>
+							<li class="list-group-item on"><a href="get_quote-pcb.html">PCB online pricing</a></li>
+							<li class="list-group-item"><a href="get_quote-smt.html">SMT online pricing</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-9 con_text">
+						<div class="row-full">
+							
+							<p>
+									GOLONCT have a professional PCB processing factory, which can provide you with professional batch PCB processing business,
+
+									as well as fast PCB model proofing, specializing in the production of high-density, high-precision single-sided, double-sided and
+
+									multi-layer rigid PCB boards and soft PCB boards.
+
+							</p>
+							
+			        <form id="PCB_online_pricing" class="form-horizontal quote_form" role="form">
+			            <div class="form-group">
+			                <label for="Board_width" class="col-sm-3 control-label">
+											  Board width(cm) <em>*</em>
+											</label>
+			                <div class="col-sm-5">
+			                  <input type="text" class="form-control" id="Board_width" placeholder="Board width(cm)">
+			                </div>
+			            </div>
+			            
+			            <div class="form-group">
+			                <label for="Board_length" class="col-sm-3 control-label">
+                        Board length(cm) <em>*</em>
+											</label>
+			                <div class="col-sm-5">
+			                  <input type="text" class="form-control" id="Board_length" placeholder="Board length(cm)">
+			                </div>
+			            </div>
+			            
+			            <div class="form-group">
+			                <label for="Board_count" class="col-sm-3 control-label">
+                        Board count <em>*</em>
+											</label>
+			                <div class="col-sm-5">
+			                  <input type="text" class="form-control" id="Board_count" placeholder="Board count">
+			                </div>
+			            </div>
+			            
+			            <div class="form-group">
+			                <label for="Total_Cost" class="col-sm-3 control-label">
+											  Total Cost <em>*</em>
+											</label>
+			                <div class="col-sm-5">
+			                  <input type="text" class="form-control" id="Total_Cost" placeholder="Total Cost">
+			                </div>
+			            </div>
+			            
+			            <div class="form-group">
+			                <label for="Your_Name" class="col-sm-3 control-label">
+											  Your Name <em>*</em>
+											</label>
+			                <div class="col-sm-5">
+			                  <input type="text" class="form-control" id="Your_Name" placeholder="Your Name">
+			                </div>
+			            </div>
+			            
+			            <div class="form-group">
+			                <label for="Your_Email" class="col-sm-3 control-label">
+											  Your Email <em>*</em>
+											</label>
+			                <div class="col-sm-5">
+			                  <input type="email" class="form-control" id="Your_Email" placeholder="Your Email">
+			                </div>
+			            </div>
+			            
+			            <div class="form-group">
+			                <label for="Additional_Notes" class="col-sm-3 control-label">
+                        Additional Notes
+											</label>
+			                <div class="col-sm-8">
+			                  <textarea class="form-control" id="Additional_Notes" placeholder="Additional Notes" rows="3"></textarea>
+			                </div>
+			            </div>
+			            
+			            <div class="form-group">
+			                <label class="col-sm-3 control-label">
+											</label>
+			                <div class="col-sm-8">
+                            <button type="submit" class="btn btn-primary" id="form_submit">Submit</button>
+			                </div>
+			            </div>
+			        </form>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+    </div>
+    
+    <div class="h_40"></div>
+    
+    <!-- footer -->
+    <footer>
+            
+        <br>
+        
+        <div class="container main-footer text-center">
+            <div class="row">
+            	<div class="col-md-12">
+								<div class="container-fluid">
+									<div class="row flags">
+										   <a class="btn btn-default" href="/our-flag/" role="button" class="tr_active"><i title="English" class="flag flag-us"></i></a>
+										   <a class="btn btn-default" href="/zh/our-flag/" role="button"><i title="中文(简体)" class="flag flag-cn"></i></a>
+										   <a class="btn btn-default" href="/zh-tw/our-flag/" role="button"><i title="中文(漢字)" class="flag flag-tw"></i></a>
+										   <a class="btn btn-default" href="/cs/our-flag/" role="button"><i title="Čeština" class="flag flag-cz"></i></a>
+										   <a class="btn btn-default" href="/da/our-flag/" role="button"><i title="Dansk" class="flag flag-dk"></i></a>
+										   <a class="btn btn-default" href="/fil/our-flag/" role="button"><i title="Wikang Filipino" class="flag flag-ph"></i></a>
+										   <a class="btn btn-default" href="/fi/our-flag/" role="button"><i title="Suomi" class="flag flag-fi"></i></a>
+										   <a class="btn btn-default" href="/he/our-flag/" role="button"><i title="עברית" class="flag flag-il"></i></a>
+										   <a class="btn btn-default" href="/id/our-flag/" role="button"><i title="Bahasa Indonesia" class="flag flag-id"></i></a>
+										   <a class="btn btn-default" href="/ja/our-flag/" role="button"><i title="日本语" class="flag flag-jp"></i></a>
+										   <a class="btn btn-default" href="/ko/our-flag/" role="button"><i title="韩语" class="flag flag-kr"></i></a>
+										   <a class="btn btn-default" href="/lo/our-flag/" role="button"><i title="ພາສາລາວ" class="flag flag-la"></i></a>
+										   <a class="btn btn-default" href="/la/our-flag/" role="button"><i title="Latīna" class="flag flag-va"></i></a>
+										   <a class="btn btn-default" href="/ms/our-flag/" role="button"><i title="Bahasa Melayu" class="flag flag-my"></i></a>
+										   <a class="btn btn-default" href="/pl/our-flag/" role="button"><i title="Polski" class="flag flag-pl"></i></a>
+										   <a class="btn btn-default" href="/ro/our-flag/" role="button"><i title="Rom&acirc;nă" class="flag flag-ro"></i></a>
+										   <a class="btn btn-default" href="/sv/our-flag/" role="button"><i title="Svenska" class="flag flag-se"></i></a>
+										   <a class="btn btn-default" href="/th/our-flag/" role="button"><i title="ภาษาไทย" class="flag flag-th"></i></a>
+										   <a class="btn btn-default" href="/uk/our-flag/" role="button"><i title="Українська" class="flag flag-ua"></i></a>
+										   <a class="btn btn-default" href="/uz/our-flag/" role="button"><i title="Oʻzbek tili" class="flag flag-uz"></i></a>
+									</div>
+									
+                 <br>
+        
+									<div class="row">
+	                    <ul class="list-inline footer-menu">
+						            <li><a href="index.html">HOME</a></li>
+						            <li><a href="pcb_copy_board.html">Electronic Design</a></li>
+						            <li><a href="pcba_processing.html">PCBA Manufacturing</a></li>
+						            <li><a href="component_procurement.html">OEM Foundry</a></li>
+						            <li><a href="get_quote-bom.html">Get Quote</a></li>
+						            <li><a href="solution.html">Solution</a></li>
+						            <li><a href="about_golonct.html">ABOUT</a></li>
+	                    </ul>
+									</div>
+								</div>
+            	</div>
+            </div>
+            
+            <br>
+            
+						<p>
+							Copyright 2019 &copy;  Shenzhen Julong Century ElectronicsCo., Ltd.
+						</p>
+        </div>
+    </footer>	  
+	  
+    <script src="js/jquery-2.0.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
