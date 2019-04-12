@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta charset="utf-8">
+    <title>Index-GOLONCT</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/mine.css" rel="stylesheet" media="screen">
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="image/golonct.ico" type="image/x-icon" rel="shortcut icon">
+    <link href="css/image.css" rel="stylesheet">
+    <link href="css/labs.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+	<body>
+		
+    <!-- nav -->
+		<nav class="navbar navbar-fixed-top" role="navigation" id="navbar">
+      	<div class="top-dark">
+	        <div class="container">
+							<div class="row">
+								<div class="col-sm-4 hidden-xs hy">WELCOME  TO  GOLONCT</div>
+								<div class="col-sm-8 col-xs-12 text-right flags_box">	
+										<div class="flags">
+											   <a class="btn btn-default" href="/our-flag/" role="button" class="tr_active"><i title="English" class="flag flag-us"></i></a>
+											   <a class="btn btn-default" href="/zh/our-flag/" role="button"><i title="中文(简体)" class="flag flag-cn"></i></a>
+											   <a class="btn btn-default" href="/zh-tw/our-flag/" role="button"><i title="中文(漢字)" class="flag flag-tw"></i></a>
+											   <a class="btn btn-default" href="/cs/our-flag/" role="button"><i title="Čeština" class="flag flag-cz"></i></a>
+											   <a class="btn btn-default" href="/da/our-flag/" role="button"><i title="Dansk" class="flag flag-dk"></i></a>
+											   <a class="btn btn-default" href="/fil/our-flag/" role="button"><i title="Wikang Filipino" class="flag flag-ph"></i></a>
+											   <a class="btn btn-default" href="/fi/our-flag/" role="button"><i title="Suomi" class="flag flag-fi"></i></a>
+											   <a class="btn btn-default" href="/he/our-flag/" role="button"><i title="עברית" class="flag flag-il"></i></a>
+											   <a class="btn btn-default" href="/id/our-flag/" role="button"><i title="Bahasa Indonesia" class="flag flag-id"></i></a>
+											   <a class="btn btn-default" href="/ja/our-flag/" role="button"><i title="日本语" class="flag flag-jp"></i></a>
+											   <a class="btn btn-default" href="/ko/our-flag/" role="button"><i title="韩语" class="flag flag-kr"></i></a>
+											   <a class="btn btn-default" href="/lo/our-flag/" role="button"><i title="ພາສາລາວ" class="flag flag-la"></i></a>
+											   <a class="btn btn-default" href="/la/our-flag/" role="button"><i title="Latīna" class="flag flag-va"></i></a>
+											   <a class="btn btn-default" href="/ms/our-flag/" role="button"><i title="Bahasa Melayu" class="flag flag-my"></i></a>
+											   <a class="btn btn-default" href="/pl/our-flag/" role="button"><i title="Polski" class="flag flag-pl"></i></a>
+											   <a class="btn btn-default" href="/ro/our-flag/" role="button"><i title="Rom&acirc;nă" class="flag flag-ro"></i></a>
+											   <a class="btn btn-default" href="/sv/our-flag/" role="button"><i title="Svenska" class="flag flag-se"></i></a>
+											   <a class="btn btn-default" href="/th/our-flag/" role="button"><i title="ภาษาไทย" class="flag flag-th"></i></a>
+											   <a class="btn btn-default" href="/uk/our-flag/" role="button"><i title="Українська" class="flag flag-ua"></i></a>
+											   <a class="btn btn-default" href="/uz/our-flag/" role="button"><i title="Oʻzbek tili" class="flag flag-uz"></i></a>
+										</div>
+								</div>
+							</div>
+					</div>
+      	</div>
+        <div class="navbar-inner">
+		        <div class="container">
+		            <div class="navbar-header">
+		                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		                      <span class="sr-only">GOLONCT</span>
+		                      <span class="icon-bar white-icon-bar"></span>
+		                      <span class="icon-bar white-icon-bar"></span>
+		                      <span class="icon-bar white-icon-bar"></span>
+		                </button>
+		                <a class="navbar-brand" href="index.html">
+		                    <img id="jupyter-nav-logo" class="navbar-logo" src="image/logoo.png" alt="GOLONCT LOGO">
+		                </a>
+		            </div>
+		            <div class="blur"></div>
+		            <div id="bs-example-navbar-collapse-1" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+		                <ul class="nav navbar-nav">
+					            <li><a href="index.html">HOME</a></li>
+					            <li class="dropdown">
+								        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarLinkOne" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Electronic Design <i class="fa fa-angle-down"></i></a>
+				                <ul class="dropdown-menu text-right" role="menu" aria-labelledby="navbarLinkOne">
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="pcb_copy_board.html">PCB copy board</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="mcu_development.html">MCU development</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="pcb_design.html">PCB design</a></li>
+				                </ul>
+					            </li>
+					            <li class="dropdown">
+								        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarLinkTwo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PCBA Manufacturing <i class="fa fa-angle-down"></i></a>
+				                <ul class="dropdown-menu text-right" role="menu" aria-labelledby="navbarLinkTwo">
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="pcba_processing.html">PCBA processing</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="pcba_proofing.html">PCBA proofing</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="pcba_test.html">PCBA test</a></li>
+				                </ul>
+					            </li>
+					            <li class="dropdown">
+								        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarLinkThree" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">OEM Foundry <i class="fa fa-angle-down"></i></a>
+				                <ul class="dropdown-menu text-right" role="menu" aria-labelledby="navbarLinkTwo">
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="component_procurement.html">Component procurement</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="pcb_board.html">PCB board</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="smt_processing.html">SMT processing</a></li>
+				                </ul>
+					            </li>
+					            <li class="dropdown">
+								        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarLinkFour" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Quote <i class="fa fa-angle-down"></i></a>
+				                <ul class="dropdown-menu text-right" role="menu" aria-labelledby="navbarLinkTwo">
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="get_quote-bom.html">Fast BOM quote</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="get_quote-pcb.html">PCB online pricing</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="get_quote-smt.html">SMT online pricing</a></li>
+				                </ul>
+					            </li>
+					            <li class="dropdown">
+								        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarLinkFive" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solution <i class="fa fa-angle-down"></i></a>
+				                <ul class="dropdown-menu text-right" role="menu" aria-labelledby="navbarLinkTwo">
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="solution.html">Rail transport</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="">new energy resource</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="">Medical equipment</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="">Industrial control</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="">Other industry</a></li>
+				                </ul>
+					            </li>
+					            <li><a href="about_golonct.html">ABOUT</a></li>
+		                </ul>               
+		            </div>
+		        </div>
+		    </div>
+    </nav>
+    
+	  <section id="jumbotron">
+	   <div class="jumbotron">
+	    <div class="bgimage enabled-news-ticker" style="background: url('image/u28.png');">
+	     <div class="container">
+	      <div class="row">
+	      	<div class="text-center ban_cen">
+	      		<h1>10 YEARS ODM&OEM service</h1>
+	      		<p>
+	      			GOLONCT is the most powerful electronic circuit research company in China. 
+	      			<br>
+	      			It has been engaged in reverse research for 10 years, 
+	      			<br>
+	      			covering business scope , PCB services, PCB assembly, Component procurement, SMT/DIP service
+	      		</p>
+	      	</div>
+	      </div>
+	     </div>
+	    </div>
+	    
+	    <div class="news-ticker alert alert-success alert-dismissable">
+	     <div class="container">
+	      <div class="clearfix">
+	         <div id="newsticker-slider" class="carousel slide" data-ride="carousel" data-interval="5000">
+		          <div class="carousel-inner" role="listbox">
+			           <div class="item active">
+				           	<div class="row-full">
+				           		<div class="col-sm-8 col-xs-12 more-div">
+						            	<a href="#">
+						            		<span class="item-type">News</span> 
+						            		<span class="item-type-border"></span> 
+						            		Get GA Zulu Builds of Java 12 here! | 
+						            		<span class="item-date">March 20, 2019</span>
+						            	</a>
+				           		</div>
+
+				            	<div class="col-sm-4 col-xs-12 more-div">
+				            	    <a href="" class="btn btn-primary learn-more">Learn More</a>
+				            	</div>
+				           	</div>
+			           </div>
+			           <div class="item">
+				           	<div class="row-full">
+				           		<div class="col-sm-8 col-xs-12 more-div">
+						            	<a href="#">
+						            		<span class="item-type">News</span> 
+						            		<span class="item-type-border"></span> 
+						            		Get GA Zulu Builds of Java 12 here! | 
+						            		<span class="item-date">March 20, 2019</span>
+						            	</a>
+				           		</div>
+
+				            	<div class="col-sm-4 col-xs-12 more-div">
+				            	    <a href="" class="btn btn-primary learn-more">Learn More</a>
+				            	</div>
+				           	</div>
+			           </div>
+		          </div>
+	         </div>
+	      </div>
+	     </div>
+	    </div>
+	   </div>
+	  </section>   
+	  
+	  
+    <div class="h_40 hidden-xs"></div>
+    <div class="containn">
+	  	<div class="container text-center">
+	  		
+	  		<!-- 这里边填内容 -->
+	  		<div class="row con_top">
+	  			<div class="col-md-4">
+	  				
+					  <div class="thumbnail">
+		            <img src="image/u115.png" alt="">
+		            <div class="caption">
+				  				<h3>Fast BOM quote</h3>
+				  				<p>
+				  					Bom online pricing, for you to
+
+										quickly report the price, quickly
+
+										solve the problem for you
+				  				</p>
+		            </div>
+		        </div>	  				
+	  				
+	  			</div>
+	  			<div class="col-md-4">
+	  				
+					  <div class="thumbnail">
+		            <img src="image/u123.png" alt="">
+		            <div class="caption">
+				  				<h3>PCB online pricing</h3>
+				  				<p>
+				  					PCB online pricing, for you to
+
+										quickly report the price, quickly
+
+										solve the problem for you
+				  				</p>
+		            </div>
+		        </div>	  				
+	  				
+	  			</div>
+	  			<div class="col-md-4">
+	  				
+					  <div class="thumbnail">
+		            <img src="image/u125.png" alt="">
+		            <div class="caption">
+				  				<h3>SMT online pricing</h3>
+				  				<p>
+				  					SMT online pricing, for you to
+
+										quickly report the price, quickly
+
+										solve the problem for you
+				  				</p>
+		            </div>
+		        </div>	  				
+	  				
+	  			</div>
+	  		</div>
+	  		
+  			<h2>OUR SERVICES</h2>
+  			<p>covering business scope , PCB services, PCB assembly, Component procurement, SMT/DIP service</p>
+	  		
+	  		<div class="row con_top2 bd">
+	  			<div class="col-md-4">
+	  				
+					  <div class="thumbnail">
+					  	<div class="w">
+		            <div class="caption">
+				  				<h3>Electronic Design</h3>
+				  				<p>
+				  					Golonct offers PCB manufacturing ,
+
+										PCB desgin and  PCB copy services,
+
+										from 1 layer to 20 layers.
+				  				</p>
+				  				<p>
+				  					<a href="">MORE &gt;&gt;</a>
+				  				</p>
+		            </div>
+		            <img src="image/u129.png" alt="">
+		         </div>
+		        </div>	  
+		      </div>
+	  			<div class="col-md-4">
+	  				
+					  <div class="thumbnail">
+					  	<div class="w">
+		            <div class="caption">
+				  				<h3>PCBA Manufacturing</h3>
+				  				<p>
+				  					Golonct offers PCB manufacturing ,
+
+										PCB desgin and  PCB copy services,
+
+										from 1 layer to 20 layers.
+				  				</p>
+				  				<p>
+				  					<a href="">MORE &gt;&gt;</a>
+				  				</p>
+		            </div>
+		            <img src="image/u148.png" alt="">
+		         </div>
+		        </div>	  
+		      </div>
+	  			<div class="col-md-4">
+	  				
+					  <div class="thumbnail">
+					  	<div class="shadow-lg p-3 mb-5 bg-white rounded w">
+		            <div class="caption">
+				  				<h3>OEM Foundry</h3>
+				  				<p>
+				  					Golonct offers PCB manufacturing ,
+
+										PCB desgin and  PCB copy services,
+
+										from 1 layer to 20 layers.
+				  				</p>
+				  				<p>
+				  					<a href="">MORE &gt;&gt;</a>
+				  				</p>
+		            </div>
+		            <img src="image/u150.png" alt="">
+		         </div>
+		        </div>	  
+		      </div>
+	  		</div>
+	  		
+        <div class="h_40 hidden-xs"></div> 
+  			<h2>The six advantages of GONLONCT</h2>
+  			<p>GOLONCT - your reliable partner, work hard and sincerely solve any problems for customers</p>
+  			
+  			<div class="row con_top mgt_20">
+	  			<div class="col-md-4">
+	  				
+					  <div class="thumbnail">
+		            <img src="image/u72.png" alt="">
+		            <div class="caption">
+				  				<h3>One-stop service</h3>
+				  				<p>
+				  					Provide one-stop service for PCBA
+
+                    electronics manufacturing
+				  				</p>
+		            </div>
+		        </div>	  				
+	  				
+	  			</div>
+	  			<div class="col-md-4">
+	  				
+					  <div class="thumbnail">
+		            <img src="image/u74.png" alt="">
+		            <div class="caption">
+				  				<h3>Experienced</h3>
+				  				<p>
+					  				Focus on electronics manufacturing
+
+										for 10 years, providing services to
+
+										listed companies 
+				  				</p>
+		            </div>
+		        </div>	  				
+	  				
+	  			</div>
+	  			<div class="col-md-4">
+	  				
+					  <div class="thumbnail">
+		            <img src="image/u76.png" alt="">
+		            <div class="caption">
+				  				<h3>Reliable quality</h3>
+				  				<p>
+				  					Complete PCBA process with new
+
+                    high-end equipment
+                    <br>
+                    &nbsp;
+				  				</p>
+		            </div>
+		        </div>	  				
+	  				
+	  			</div>
+	  			<div class="col-md-4">
+	  				
+					  <div class="thumbnail">
+		            <img src="image/u78.png" alt="">
+		            <div class="caption">
+				  				<h3>Extensive customer</h3>
+				  				<p>
+				  				  Foreign customers in the UK, Russia,
+
+                    Turkey, India, Saudi Arabia, etc.
+				  				</p>
+		            </div>
+		        </div>	  				
+	  				
+	  			</div>
+	  			<div class="col-md-4">
+	  				
+					  <div class="thumbnail">
+		            <img src="image/u80.png" alt="">
+		            <div class="caption">
+				  				<h3>Quick Service</h3>
+				  				<p>
+				  					Normally 1 ~5 days for only PCB assembly; 10 ~16 days for turnkey
+
+                    PCB assembly
+				  				</p>
+		            </div>
+		        </div>	  				
+	  				
+	  			</div>
+	  			<div class="col-md-4">
+	  				
+					  <div class="thumbnail">
+		            <img src="image/u82.png" alt="">
+		            <div class="caption">
+				  				<h3>After-sale</h3>
+				  				<p>
+				  					GOLONCT has 24-hour online customer
+
+                    service to solve all your problems.
+				  				</p>
+		            </div>
+		        </div>	  				
+	  				
+	  			</div>
+  			</div>
+  		</div>
+  	</div>
+  	
+    <div class="containn bg_F0F7FB">
+      <div class="h_40"></div> 
+	  	<div class="container text-center">
+  			<div class="row cen_top6">
+  				<div class="col-md-3 text-left bg_ff t_l">
+  					<h3>Factory real scene</h3>
+  					<p>
+  						Strive to provide a better electronic
+
+							solution development environment
+
+							for first-class enterprises.The factory
+
+							is equipped with new imported
+
+							Fuji XPF, NXT3, automatic solder
+
+							paste printing machine, ten
+
+							temperature zone reflow oven,
+
+							wave soldering and other
+
+							high-end equipment.
+						</p>
+  				</div>
+  				<div class="col-md-9 bg_ff t_r">
+  					<div class="row pull-right">
+					    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					      <!-- Indicators -->
+					      <ol class="carousel-indicators">
+					        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+					      </ol>
+
+					      <!-- Wrapper for slides -->
+					      <div class="carousel-inner" style="text-align:center;width:880px;height:350px;overflow:hidden;">
+					        <div class="item active">
+					          <img alt="First slide" src="image/gc1.jpg" />
+					        </div>
+					        <div class="item">
+					          <img alt="Second slide" src="image/gc2.jpg" />
+					        </div>
+					        <div class="item">
+					          <img alt="Third slide" src="image/gc3.jpg"  />
+					        </div>
+					        <div class="item">
+					          <img alt="Third slide" src="image/gc4.jpg"  />
+					        </div>
+					      </div>
+					    </div>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+      <div class="h_40"></div> 
+  	</div>
+  			
+  			
+      <div class="h_40"></div> 
+    <div class="containn">
+	  	<div class="container text-center cen_lb">
+        <div class="h_40 hidden-xs"></div> 
+  			<h2>The production process</h2>
+  			<p>GOLONCT - your reliable partner, work hard and sincerely solve any problems for customers</p>
+  			<div class="container hidden-xs">
+					<div class="row clearfix">
+						<div class="col-md-12 column">
+							<div class="carousel slide" id="carousel-115509">
+								<div class="carousel-inner">
+									<div class="item active">
+										<div class="row" style="width:90%;margin-left:auto;margin-right:auto;">
+											<div class="col-md-3">
+										    <img alt="" src="image/u48.png" />
+											</div>
+											<div class="col-md-3">
+										    <img alt="" src="image/u50.png" />
+											</div>
+											<div class="col-md-3">
+										    <img alt="" src="image/u52.png" />
+											</div>
+											<div class="col-md-3">
+										    <img alt="" src="image/u54.png" />
+											</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="row" style="width:90%;margin-left:auto;margin-right:auto;">
+											<div class="col-md-3">
+										    <img alt="" src="image/u48.png" />
+											</div>
+											<div class="col-md-3">
+										    <img alt="" src="image/u50.png" />
+											</div>
+											<div class="col-md-3">
+										    <img alt="" src="image/u52.png" />
+											</div>
+											<div class="col-md-3">
+										    <img alt="" src="image/u54.png" />
+											</div>
+										</div>
+									</div>
+								</div> 
+								<a class="left carousel-control" href="#carousel-115509" data-slide="prev"><span class="fa fa-chevron-left"></span></a> 
+								<a class="right carousel-control" href="#carousel-115509" data-slide="next"><span class="fa fa-chevron-right"></span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+  		</div>
+      <div class="h_40"></div> 
+  	</div>
+      <div class="h_40"></div> 
+  	
+    <div class="containn bg_F0F7FB">
+      <div class="h_40"></div> 
+	  	<div class="container text-center">
+  			<div class="row cen_top5">
+  				<div class="col-md-3">
+  					<div class="bg1" style="background: url('image/u92.png') center no-repeat;"></div>
+  				</div>
+  				<div class="col-md-6">
+  					<div class="row">
+  						<div class="col-md-6">
+  					    <div class="bg2" style="background: url('image/u94.png') center no-repeat; "></div>
+  						</div>
+  						<div class="col-md-6">
+  					    <div class="bg2" style="background: url('image/u96.png') center no-repeat;"></div>
+  						</div>
+  						<div class="col-md-6 mgt_10">
+  					    <div class="bg2" style="background: url('image/u98.png') center no-repeat;"></div>
+  						</div>
+  						<div class="col-md-6 mgt_10">
+  					    <div class="bg2" style="background: url('image/u100.png') center no-repeat;"></div>
+  						</div>
+  					</div>
+  				</div>
+  				<div class="col-md-3 bd_430">
+  					<h3>GOLONCT PARTNER</h3>
+  					<div class="bd_50" style="background:url(image/u106_line.png);"></div>
+  					<p>
+  						We value customer satisfac-
+
+							tion, 24-hour after-sales
+
+							online service, communicate
+
+							with customers in a timely
+
+							manner, and strive to maintain
+
+							long-term cooperation with
+
+							them! Your next partner may
+
+							be us! Contact now!
+  					</p>
+  				</div>
+  			</div>
+  		</div>
+      <div class="h_40"></div> 
+  	</div>
+  			
+	  		
+    <div class="containn">
+	  	<div class="container text-center">
+        <div class="h_40 hidden-xs"></div> 
+  			<h2>GONLONCT 's success case</h2>
+  			<p>GOLONCT - your reliable partner, work hard and sincerely solve any problems for customers</p>
+      
+  			<div class="row cen_last">
+  				<div class="col-md-5">
+  					<div class="rwo">
+  						<div class="col-md-6">
+							  <div class="thumbnail">
+				            <img src="image/u199.png" alt="">
+				            <div class="caption">
+				            	<p>Industrial Control</p>
+				            </div>
+				        </div>
+  						</div>
+  						<div class="col-md-6">
+							  <div class="thumbnail">
+				            <img src="image/u201.png" alt="">
+				            <div class="caption">
+				            	<p>Medical Health</p>
+				            </div>
+				        </div>
+  						</div>
+  						<div class="col-md-6">
+							  <div class="thumbnail">
+				            <img src="image/u203.png" alt="">
+				            <div class="caption">
+				            	<p>Automotive electronics</p>
+				            </div>
+				        </div>
+  						</div>
+  						<div class="col-md-6">
+							  <div class="thumbnail">
+				            <img src="image/u205.png" alt="">
+				            <div class="caption">
+				            	<p>Medical Health</p>
+				            </div>
+				        </div>
+  						</div>
+  						<div class="col-md-6">
+							  <div class="thumbnail">
+				            <img src="image/u207.png" alt="">
+				            <div class="caption">
+				            	<p>Industrial Control</p>
+				            </div>
+				        </div>
+  						</div>
+  						<div class="col-md-6">
+							  <div class="thumbnail">
+				            <img src="image/u209.png" alt="">
+				            <div class="caption">
+				            	<p>Medical Health</p>
+				            </div>
+				        </div>
+  						</div>
+  					</div>
+  				</div>
+  				<div class="col-md-7">
+  					<div class="bg" style="background: url('image/u197.png') 50% 50% / cover no-repeat;"></div>
+  				</div>
+  			</div>
+	  		
+	  		
+			</div>
+    </div>
+    
+    <div class="h_40"></div> 
+    
+    <!-- footer -->
+    <footer>
+            
+        <br>
+        
+        <div class="container main-footer text-center">
+            <div class="row">
+            	<div class="col-md-12">
+								<div class="container-fluid">
+									<div class="row flags">
+										   <a class="btn btn-default" href="/our-flag/" role="button" class="tr_active"><i title="English" class="flag flag-us"></i></a>
+										   <a class="btn btn-default" href="/zh/our-flag/" role="button"><i title="中文(简体)" class="flag flag-cn"></i></a>
+										   <a class="btn btn-default" href="/zh-tw/our-flag/" role="button"><i title="中文(漢字)" class="flag flag-tw"></i></a>
+										   <a class="btn btn-default" href="/cs/our-flag/" role="button"><i title="Čeština" class="flag flag-cz"></i></a>
+										   <a class="btn btn-default" href="/da/our-flag/" role="button"><i title="Dansk" class="flag flag-dk"></i></a>
+										   <a class="btn btn-default" href="/fil/our-flag/" role="button"><i title="Wikang Filipino" class="flag flag-ph"></i></a>
+										   <a class="btn btn-default" href="/fi/our-flag/" role="button"><i title="Suomi" class="flag flag-fi"></i></a>
+										   <a class="btn btn-default" href="/he/our-flag/" role="button"><i title="עברית" class="flag flag-il"></i></a>
+										   <a class="btn btn-default" href="/id/our-flag/" role="button"><i title="Bahasa Indonesia" class="flag flag-id"></i></a>
+										   <a class="btn btn-default" href="/ja/our-flag/" role="button"><i title="日本语" class="flag flag-jp"></i></a>
+										   <a class="btn btn-default" href="/ko/our-flag/" role="button"><i title="韩语" class="flag flag-kr"></i></a>
+										   <a class="btn btn-default" href="/lo/our-flag/" role="button"><i title="ພາສາລາວ" class="flag flag-la"></i></a>
+										   <a class="btn btn-default" href="/la/our-flag/" role="button"><i title="Latīna" class="flag flag-va"></i></a>
+										   <a class="btn btn-default" href="/ms/our-flag/" role="button"><i title="Bahasa Melayu" class="flag flag-my"></i></a>
+										   <a class="btn btn-default" href="/pl/our-flag/" role="button"><i title="Polski" class="flag flag-pl"></i></a>
+										   <a class="btn btn-default" href="/ro/our-flag/" role="button"><i title="Rom&acirc;nă" class="flag flag-ro"></i></a>
+										   <a class="btn btn-default" href="/sv/our-flag/" role="button"><i title="Svenska" class="flag flag-se"></i></a>
+										   <a class="btn btn-default" href="/th/our-flag/" role="button"><i title="ภาษาไทย" class="flag flag-th"></i></a>
+										   <a class="btn btn-default" href="/uk/our-flag/" role="button"><i title="Українська" class="flag flag-ua"></i></a>
+										   <a class="btn btn-default" href="/uz/our-flag/" role="button"><i title="Oʻzbek tili" class="flag flag-uz"></i></a>
+									</div>
+									
+                 <br>
+        
+									<div class="row">
+	                    <ul class="list-inline footer-menu">
+						            <li><a href="index.html">HOME</a></li>
+						            <li><a href="pcb_copy_board.html">Electronic Design</a></li>
+						            <li><a href="pcba_processing.html">PCBA Manufacturing</a></li>
+						            <li><a href="component_procurement.html">OEM Foundry</a></li>
+						            <li><a href="get_quote-bom.html">Get Quote</a></li>
+						            <li><a href="solution.html">Solution</a></li>
+						            <li><a href="about_golonct.html">ABOUT</a></li>
+	                    </ul>
+									</div>
+								</div>
+            	</div>
+            </div>
+            
+            <br>
+            
+						<p>
+							Copyright 2019 &copy;  Shenzhen Julong Century ElectronicsCo., Ltd.
+						</p>
+        </div>
+    </footer>	  
+	  
+    <script src="js/jquery-2.0.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script>
+
+        $(function () {
+
+            $.scrollUp({
+                animation: 'fade',
+                activeOverlay: '#00FFFF',
+                scrollImg: {
+                    active: true,
+                    type: 'background',
+                    src: 'image/top.png'
+                }
+            });
+        });
+
+    </script>
+  </body>
+</html>
