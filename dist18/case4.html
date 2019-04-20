@@ -1,0 +1,332 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta charset="utf-8">
+    <title>case4</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/mine.css" rel="stylesheet" media="screen">
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="image/golonct.ico" type="image/x-icon" rel="shortcut icon">
+    <link href="css/image.css" rel="stylesheet">
+    <link href="css/labs.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+	<body>
+		
+    <!-- nav -->
+		<nav class="navbar navbar-fixed-top" role="navigation" id="navbar">
+      	<div class="top-dark">
+	        <div class="container">
+							<div class="row">
+								<div class="col-sm-4 hidden-xs hy">WELCOME  TO  GOLONCT</div>
+								<div class="col-sm-8 col-xs-12 text-right flags_box">	
+										<div class="flags">
+											   <a class="btn btn-default" href="/our-flag/" role="button" class="tr_active"><i title="English" class="flag flag-us"></i></a>
+											   <a class="btn btn-default" href="/zh/our-flag/" role="button"><i title="中文(简体)" class="flag flag-cn"></i></a>
+											   <a class="btn btn-default" href="/zh-tw/our-flag/" role="button"><i title="中文(漢字)" class="flag flag-tw"></i></a>
+											   <a class="btn btn-default" href="/cs/our-flag/" role="button"><i title="Čeština" class="flag flag-cz"></i></a>
+											   <a class="btn btn-default" href="/da/our-flag/" role="button"><i title="Dansk" class="flag flag-dk"></i></a>
+											   <a class="btn btn-default" href="/fil/our-flag/" role="button"><i title="Wikang Filipino" class="flag flag-ph"></i></a>
+											   <a class="btn btn-default" href="/fi/our-flag/" role="button"><i title="Suomi" class="flag flag-fi"></i></a>
+											   <a class="btn btn-default" href="/he/our-flag/" role="button"><i title="עברית" class="flag flag-il"></i></a>
+											   <a class="btn btn-default" href="/id/our-flag/" role="button"><i title="Bahasa Indonesia" class="flag flag-id"></i></a>
+											   <a class="btn btn-default" href="/ja/our-flag/" role="button"><i title="日本语" class="flag flag-jp"></i></a>
+											   <a class="btn btn-default" href="/ko/our-flag/" role="button"><i title="韩语" class="flag flag-kr"></i></a>
+											   <a class="btn btn-default" href="/lo/our-flag/" role="button"><i title="ພາສາລາວ" class="flag flag-la"></i></a>
+											   <a class="btn btn-default" href="/la/our-flag/" role="button"><i title="Latīna" class="flag flag-va"></i></a>
+											   <a class="btn btn-default" href="/ms/our-flag/" role="button"><i title="Bahasa Melayu" class="flag flag-my"></i></a>
+											   <a class="btn btn-default" href="/pl/our-flag/" role="button"><i title="Polski" class="flag flag-pl"></i></a>
+											   <a class="btn btn-default" href="/ro/our-flag/" role="button"><i title="Rom&acirc;nă" class="flag flag-ro"></i></a>
+											   <a class="btn btn-default" href="/sv/our-flag/" role="button"><i title="Svenska" class="flag flag-se"></i></a>
+											   <a class="btn btn-default" href="/th/our-flag/" role="button"><i title="ภาษาไทย" class="flag flag-th"></i></a>
+											   <a class="btn btn-default" href="/uk/our-flag/" role="button"><i title="Українська" class="flag flag-ua"></i></a>
+											   <a class="btn btn-default" href="/uz/our-flag/" role="button"><i title="Oʻzbek tili" class="flag flag-uz"></i></a>
+										</div>
+								</div>
+							</div>
+					</div>
+      	</div>
+        <div class="navbar-inner">
+		        <div class="container">
+		            <div class="navbar-header">
+		                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		                      <span class="sr-only">GOLONCT</span>
+		                      <span class="icon-bar white-icon-bar"></span>
+		                      <span class="icon-bar white-icon-bar"></span>
+		                      <span class="icon-bar white-icon-bar"></span>
+		                </button>
+		                <a class="navbar-brand" href="index.html">
+		                    <img id="jupyter-nav-logo" class="navbar-logo" src="image/logoo.png" alt="GOLONCT LOGO">
+		                </a>
+		            </div>
+		            <div class="blur"></div>
+		            <div id="bs-example-navbar-collapse-1" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+		                <ul class="nav navbar-nav">
+					            <li><a href="index.html">HOME</a></li>
+					            <li class="dropdown">
+								        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarLinkOne" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Electronic Design <i class="fa fa-angle-down"></i></a>
+				                <ul class="dropdown-menu text-right" role="menu" aria-labelledby="navbarLinkOne">
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="pcb_copy_board.html">PCB copy board</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="mcu_development.html">MCU development</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="pcb_design.html">PCB design</a></li>
+				                </ul>
+					            </li>
+					            <li class="dropdown">
+								        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarLinkTwo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PCBA Manufacturing <i class="fa fa-angle-down"></i></a>
+				                <ul class="dropdown-menu text-right" role="menu" aria-labelledby="navbarLinkTwo">
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="pcba_processing.html">PCBA processing</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="pcba_proofing.html">PCBA proofing</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="pcba_test.html">PCBA test</a></li>
+				                </ul>
+					            </li>
+					            <li class="dropdown">
+								        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarLinkThree" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">OEM Foundry <i class="fa fa-angle-down"></i></a>
+				                <ul class="dropdown-menu text-right" role="menu" aria-labelledby="navbarLinkTwo">
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="component_procurement.html">Component procurement</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="pcb_board.html">PCB board</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="smt_processing.html">SMT processing</a></li>
+				                </ul>
+					            </li>
+					            <li class="dropdown">
+								        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarLinkFour" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Quote <i class="fa fa-angle-down"></i></a>
+				                <ul class="dropdown-menu text-right" role="menu" aria-labelledby="navbarLinkTwo">
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="get_quote-bom.html">Fast BOM quote</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="get_quote-pcb.html">PCB online pricing</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="get_quote-smt.html">SMT online pricing</a></li>
+				                </ul>
+					            </li>
+					            <li class="dropdown">
+								        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarLinkFive" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solution <i class="fa fa-angle-down"></i></a>
+				                <ul class="dropdown-menu text-right" role="menu" aria-labelledby="navbarLinkTwo">
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="solution.html">Rail transport</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="">new energy resource</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="">Medical equipment</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="">Industrial control</a></li>
+				                    <li role="presentation"><a role="menuitem" tabindex="-1" href="">Other industry</a></li>
+				                </ul>
+					            </li>
+					            <li><a href="about_golonct.html">ABOUT</a></li>
+		                </ul>               
+		            </div>
+		        </div>
+		    </div>
+    </nav>
+    
+		<div class="row nav_bq clearfix">
+		    <div class="containn">
+			  	<div class="container">
+					
+						<div class="col-md-12 column">
+							<ul class="breadcrumb">
+								<li>
+									 <a href="solution.html">Solution</a>
+								</li>
+								<li class="active">
+									电梯人机界面控制方案开发
+								</li>
+							</ul>
+						</div>
+					</div>
+        </div>
+		</div>
+		
+    <div class="containn case_list">
+	  	<div class="container row_img text-center">
+	  		<div class="row text-left">
+	  		  <h1 class="text-center">电梯人机界面控制方案开发</h1>
+	  		  <strong>
+	  		  	电梯控制系统的结构组成：
+					</strong>
+					<p>
+						电梯控制系统主要包括电梯拖动系统的控制和电梯逻辑系统的控制。电梯拖动控制部分主要包括电梯垂直方向主拖动电路和轿厢开关电路，其性能对电梯
+
+ 
+
+						运行时乘客的舒适感有着重要影响。电梯逻辑控制部分则是由众多呼叫按钮、传感器、控制用继电器、指示灯和控制部分的核心器件(PLC)等组成，是电梯安全町靠运
+
+						 
+
+						行的关键，是电梯控制系统自动化程度的重要标志。电梯的拖动系统控制主要以电梯运行速度为控制目标，以给定速度曲线作为依据，利用模拟控制装置或数字控制装
+
+						 
+
+						置，针对曳引电动机的不同调速方式构成闭环或开环的速度控制系统，从而实现电梯运动状态的控制。电梯的逻辑系统控制主要以电梯操纵调度为控制目标，以电梯空
+
+						 
+
+						间距离和时间间隔的严密配合为依据，利用直接或间接控制手段，完成电梯运行过程的协调动作，实现电梯服务运行的安全、高效、舒适。
+					</p>
+					<strong>
+						电梯控制系统设计的思路：
+					</strong>
+					<p>
+						通过分析电梯的控制要求，首先选择合适的PLC。PLC是整个控制系统的核心部件，它对保证系统的技术指标和质量是至关重要的。根据系统要求合理分
+
+ 
+
+						配I/O接口，编制PLC的l/O地址分配表，并绘制I/O端子接线闲，最后编写电梯控制系统的软件，其包括PLC控制软件和上位机控制软件。编制PLC控制软件需要深入了解
+
+						 
+
+						电梯控制要求与主要控制的基本方法以及系统应完成的动作、自动工作循环的组成和必要的保护等方面，可将电梯控制任务分解为独侈的几个部分，利用结构化模块化
+
+						 
+
+						方法进行编程。人机界面的PLC控制系统，对电梯的统一管理至关重要。
+					</p>
+					<strong>
+						电梯控制系统的软件设计：
+					</strong>
+					<p>
+						电梯控制系统的软件设计是PLC电梯控制系统设计的关键环节。在其软件设计过程中，一要坚持功能完善、面面俱到的原则，保证电梯安全有效地运行；
+
+ 
+
+							二要遵循结构简练、易读易改的原则，尽量减少程序量，采用模块化设计，充分利用PLC中的各种指令优化程序，缩短PLC程序扫描时间，保证电梯的精度。电梯控制
+
+							 
+
+							系统实际上是一个人机交瓦式的系统，并且电梯在运行中各种输入信号是随机出现的，即存在很多不确定因素。同时又有大量的自锁，互锁关系，故单纯采用顺序控制
+
+							 
+
+							不能满足控制要求，因此电梯控制系统采用随机逻辑方式控制，即在以顺序逻辑控制实现电梯的基本控制要求的基础上，根据随机的输入信号，以及电梯的相应状态适
+
+							 
+
+							时的控制电梯的运行。结合拖动系统，PLC接收来自操纵盘和每层的呼叫信号、轿厢和厅门系统的功能信号以及井道和变频器的状态信号，经程序判断与运算实现电梯
+
+							 
+
+							的集选控制。PLC在输出显示和监控信号的同时，根据随机逻辑控制的要求，向变频器发出运行方向、启动、加／减速运行和制动停梯等信号。由变频器根据一定的控
+
+							 
+
+							制规律和控制算法来控制电机。同时，当系统出现故障时，PLC向变频器发出信号，其中各个厅门和轿厢操纵盘上的信号通过厅门、轿厢控制器以串行通信方式送入
+
+							 
+
+							PLC，完成电梯的工作全过程
+					</p>
+					<p>
+						根据电梯的电气控制要求，电梯总是按照一定的程序重复地进行动作，电梯运行的循环过程为：检测呼叫／选层信号，判断电梯的运行方向，起动运行，
+
+ 
+
+							在运行过程中，要进行顺向截梯、呼梯和轿内选择记忆等操作，到达层站时，执行开门、关门程序。电梯在实际运行中的PLC控制功能流程图如图4所示。PLC上电运行
+
+							 
+
+							首先进行自检，确定无故障后，开始控制电梯的运行。电梯的运行情况可分为静止和运作两个状态。
+
+							 
+
+							 
+
+							①在静止状态下电梯停于某层，这时电梯所接受的信号有两类：来自其它层的呼叫信号，PLC根据呼叫信号的响应流程，做出上行或下行的决定，使曳引电机得电上升
+
+							 
+
+							或下降；电梯停靠的本层有呼叫信号，则执行开关门的程序，而后根据选层信号，电梯上行或下行。
+
+							 
+
+							 
+
+							②电梯正在运行状态：如果是下行，只响应下招呼梯信号；上行过程中只响应上招信号。电梯在运行过程中具有楼层指示和上行或下行的状态指示，这样可以使轿厢
+
+							 
+
+							内外的乘客清楚的知道电梯的运行状态。
+					</p>
+	  		</div>
+			</div>
+    </div>
+    
+    <div class="h_40"></div>
+    <div class="h_40"></div>
+    
+    <!-- footer -->
+    <footer>
+            
+        <br>
+        
+        <div class="container main-footer text-center">
+            <div class="row">
+            	<div class="col-md-12">
+								<div class="container-fluid">
+									<div class="row flags">
+										   <a class="btn btn-default" href="/our-flag/" role="button" class="tr_active"><i title="English" class="flag flag-us"></i></a>
+										   <a class="btn btn-default" href="/zh/our-flag/" role="button"><i title="中文(简体)" class="flag flag-cn"></i></a>
+										   <a class="btn btn-default" href="/zh-tw/our-flag/" role="button"><i title="中文(漢字)" class="flag flag-tw"></i></a>
+										   <a class="btn btn-default" href="/cs/our-flag/" role="button"><i title="Čeština" class="flag flag-cz"></i></a>
+										   <a class="btn btn-default" href="/da/our-flag/" role="button"><i title="Dansk" class="flag flag-dk"></i></a>
+										   <a class="btn btn-default" href="/fil/our-flag/" role="button"><i title="Wikang Filipino" class="flag flag-ph"></i></a>
+										   <a class="btn btn-default" href="/fi/our-flag/" role="button"><i title="Suomi" class="flag flag-fi"></i></a>
+										   <a class="btn btn-default" href="/he/our-flag/" role="button"><i title="עברית" class="flag flag-il"></i></a>
+										   <a class="btn btn-default" href="/id/our-flag/" role="button"><i title="Bahasa Indonesia" class="flag flag-id"></i></a>
+										   <a class="btn btn-default" href="/ja/our-flag/" role="button"><i title="日本语" class="flag flag-jp"></i></a>
+										   <a class="btn btn-default" href="/ko/our-flag/" role="button"><i title="韩语" class="flag flag-kr"></i></a>
+										   <a class="btn btn-default" href="/lo/our-flag/" role="button"><i title="ພາສາລາວ" class="flag flag-la"></i></a>
+										   <a class="btn btn-default" href="/la/our-flag/" role="button"><i title="Latīna" class="flag flag-va"></i></a>
+										   <a class="btn btn-default" href="/ms/our-flag/" role="button"><i title="Bahasa Melayu" class="flag flag-my"></i></a>
+										   <a class="btn btn-default" href="/pl/our-flag/" role="button"><i title="Polski" class="flag flag-pl"></i></a>
+										   <a class="btn btn-default" href="/ro/our-flag/" role="button"><i title="Rom&acirc;nă" class="flag flag-ro"></i></a>
+										   <a class="btn btn-default" href="/sv/our-flag/" role="button"><i title="Svenska" class="flag flag-se"></i></a>
+										   <a class="btn btn-default" href="/th/our-flag/" role="button"><i title="ภาษาไทย" class="flag flag-th"></i></a>
+										   <a class="btn btn-default" href="/uk/our-flag/" role="button"><i title="Українська" class="flag flag-ua"></i></a>
+										   <a class="btn btn-default" href="/uz/our-flag/" role="button"><i title="Oʻzbek tili" class="flag flag-uz"></i></a>
+									</div>
+									
+                 <br>
+        
+									<div class="row">
+	                    <ul class="list-inline footer-menu">
+						            <li><a href="index.html">HOME</a></li>
+						            <li><a href="pcb_copy_board.html">Electronic Design</a></li>
+						            <li><a href="pcba_processing.html">PCBA Manufacturing</a></li>
+						            <li><a href="component_procurement.html">OEM Foundry</a></li>
+						            <li><a href="get_quote-bom.html">Get Quote</a></li>
+						            <li><a href="solution.html">Solution</a></li>
+						            <li><a href="about_golonct.html">ABOUT</a></li>
+	                    </ul>
+									</div>
+								</div>
+            	</div>
+            </div>
+            
+            <br>
+            
+						<p>
+							Copyright 2019 &copy;  Shenzhen Julong Century ElectronicsCo., Ltd.
+						</p>
+        </div>
+    </footer>	  
+	  
+    <script src="js/jquery-2.0.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script>
+
+        $(function () {
+
+            $.scrollUp({
+                animation: 'fade',
+                activeOverlay: '#00FFFF',
+                scrollImg: {
+                    active: true,
+                    type: 'background',
+                    src: 'image/top.png'
+                }
+            });
+        });
+
+    </script>
+  </body>
+</html>
